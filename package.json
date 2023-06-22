@@ -1,14 +1,30 @@
 {
   "name": "typescript-npm-package-template",
   "version": "0.0.0-development",
-  "description": "A template for creating npm packages using TypeScript and VSCode",
-  "main": "./lib/index.js",
+  "description": "A template for creating npm packages using TypeScript and VSCode",  
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/mjs/index.js"
+    },
+    "./*": {
+      "types": "./dist/types/*.d.ts",
+      "require": "./dist/cjs/*.js",
+      "import": "./dist/mjs/*.js"
+    },
+    "./package.json": "./package.json"
+  },
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.build.json",
-    "clean": "rm -rf ./lib/",
+    "build": "npm run build:cjs && npm run build:mjs",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:mjs": "tsc --project tsconfig.mjs.json",
+    "clean": "rm -rf ./lib/ && rm -rf ./dist/",
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
     "prepare": "husky install",

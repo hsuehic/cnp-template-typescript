@@ -64,8 +64,8 @@
     "vscode",
     "jest",
     "husky",
-    "commitizen",
-    "semantic-release",
+    "commitlint",
+    "changesets",
     "codecov"
   ],
   "bugs": {

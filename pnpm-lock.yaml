@@ -18,6 +18,8 @@ specifiers:
   husky: ^6.0.0
   jest: ^27.2.0
   lint-staged: ^13.2.1
+  npm-package-json-lint: ^7.0.0
+  npm-package-json-lint-config-default: ^6.0.0
   prettier: ^2.2.1
   ts-jest: ^27.0.5
   ts-node: ^10.2.1
@@ -41,6 +43,8 @@ devDependencies:
   husky: 6.0.0
   jest: 27.5.1_ts-node@10.9.1
   lint-staged: 13.2.3
+  npm-package-json-lint: 7.0.0
+  npm-package-json-lint-config-default: 6.0.0_npm-package-json-lint@7.0.0
   prettier: 2.8.8
   ts-jest: 27.1.5_6f13976d17c734a28204acb9bb26fda2
   ts-node: 10.9.1_7c4b7c5cc76c94722e8863c3e1d438e4
@@ -1436,6 +1440,14 @@ packages:
       indent-string: 4.0.0
     dev: true
 
+  /ajv-errors/1.0.1_ajv@6.12.6:
+    resolution: {integrity: sha512-DCRfO/4nQ+89p/RK43i8Ezd41EqdGIU4ld7nGF8OQ14oc/we5rEntLCUa7+jrn3nn83BosfwZA0wb4pon2o8iQ==}
+    peerDependencies:
+      ajv: '>=5.0.0'
+    dependencies:
+      ajv: 6.12.6
+    dev: true
+
   /ajv/6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
     dependencies:
@@ -1725,6 +1737,12 @@ packages:
     dependencies:
       base64-js: 1.5.1
       ieee754: 1.2.1
+    dev: true
+
+  /builtins/5.0.1:
+    resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
+    dependencies:
+      semver: 7.5.3
     dev: true
 
   /cachedir/2.3.0:
@@ -3108,6 +3126,11 @@ packages:
       side-channel: 1.0.4
     dev: true
 
+  /irregular-plurals/3.5.0:
+    resolution: {integrity: sha512-1ANGLZ+Nkv1ptFb2pa8oG8Lem4krflKuX/gINiHJHjJUKaJHk/SXk5x6K3J+39/p0h1RQ2saROclJJ+QLvETCQ==}
+    engines: {node: '>=8'}
+    dev: true
+
   /is-array-buffer/3.0.2:
     resolution: {integrity: sha512-y+FyyR/w8vfIRq4eQcM1EYgSTnmHXPqaF+IgzgraytCFq5Xh8lllDVmAZolPJiZttZLeFSINPYMaEJ7/vWUa1w==}
     dependencies:
@@ -3216,6 +3239,11 @@ packages:
   /is-plain-obj/1.1.0:
     resolution: {integrity: sha512-yvkRyxmFKEOQ4pNXCmJG5AEQNlXJS5LaONXo5/cLdTZdWvsZ1ioJEonLGAosKlMWE8lwUy/bJzMjcw8az73+Fg==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /is-plain-obj/3.0.0:
+    resolution: {integrity: sha512-gwsOE28k+23GP1B6vFl1oVh/WOzmawBrKwo5Ev6wMKzPkaXaCDIQKzLnvsA42DRlbVTWorkgTKIviAKCWkfUwA==}
+    engines: {node: '>=10'}
     dev: true
 
   /is-potential-custom-element-name/1.0.1:
@@ -3915,6 +3943,10 @@ packages:
     hasBin: true
     dev: true
 
+  /jsonc-parser/3.2.0:
+    resolution: {integrity: sha512-gfFQZrcTc8CnKXp6Y4/CBT3fTc0OVuDofpre4aEeEpSBPV5X5v4+Vmx+8snU7RLPrNHPKSgLxGo9YuQzz20o+w==}
+    dev: true
+
   /jsonfile/4.0.0:
     resolution: {integrity: sha512-m6F1R3z8jjlf2imQHS2Qez5sjKWQzbuuhuJ/FKYFRZvPE3PuHcSMVZzfsLhGVOkfd20obL5SWEBew5ShlquNxg==}
     optionalDependencies:
@@ -4197,6 +4229,24 @@ packages:
       yargs-parser: 20.2.9
     dev: true
 
+  /meow/9.0.0:
+    resolution: {integrity: sha512-+obSblOQmRhcyBt62furQqRAQpNyWXo8BuQ5bN7dG8wmwQ+vwHKp/rCFD4CrTP8CsDQD1sjoZ94K417XEUk8IQ==}
+    engines: {node: '>=10'}
+    dependencies:
+      '@types/minimist': 1.2.2
+      camelcase-keys: 6.2.2
+      decamelize: 1.2.0
+      decamelize-keys: 1.1.1
+      hard-rejection: 2.1.0
+      minimist-options: 4.1.0
+      normalize-package-data: 3.0.3
+      read-pkg-up: 7.0.1
+      redent: 3.0.0
+      trim-newlines: 3.0.1
+      type-fest: 0.18.1
+      yargs-parser: 20.2.9
+    dev: true
+
   /merge-stream/2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
     dev: true
@@ -4311,6 +4361,41 @@ packages:
   /normalize-path/3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /npm-package-json-lint-config-default/6.0.0_npm-package-json-lint@7.0.0:
+    resolution: {integrity: sha512-Ek3EcbMEjvGSxEywxNF2tTHuzvtaUH48Z7sljmeSejANMSpE1ssIN0oOG/Tlpc+U/P7ElfsOySIjijjmEnvMGw==}
+    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+    peerDependencies:
+      npm-package-json-lint: ^7.0.0
+    dependencies:
+      npm-package-json-lint: 7.0.0
+    dev: true
+
+  /npm-package-json-lint/7.0.0:
+    resolution: {integrity: sha512-Yn8flnPx/7hTxwejWL5urm8sbEahq8ic3R80d7nlBvS6C58JEmJpUqvO7Ksy8izRzpbrHq0Anwlv/nQg5OYf8Q==}
+    engines: {node: '>=16.0.0', npm: '>=8.0.0'}
+    hasBin: true
+    dependencies:
+      ajv: 6.12.6
+      ajv-errors: 1.0.1_ajv@6.12.6
+      chalk: 4.1.2
+      cosmiconfig: 8.2.0
+      debug: 4.3.4
+      globby: 11.1.0
+      ignore: 5.2.4
+      is-plain-obj: 3.0.0
+      jsonc-parser: 3.2.0
+      log-symbols: 4.1.0
+      meow: 9.0.0
+      plur: 4.0.0
+      semver: 7.5.3
+      slash: 3.0.0
+      strip-json-comments: 3.1.1
+      type-fest: 3.12.0
+      validate-npm-package-name: 5.0.0
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
   /npm-run-path/4.0.1:
@@ -4543,6 +4628,13 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: true
+
+  /plur/4.0.0:
+    resolution: {integrity: sha512-4UGewrYgqDFw9vV6zNV+ADmPAUAfJPKtGvb/VdpQAx25X5f3xXdGdyOEVFwkl8Hl/tl7+xbeHqSEM+D5/TirUg==}
+    engines: {node: '>=10'}
+    dependencies:
+      irregular-plurals: 3.5.0
     dev: true
 
   /preferred-pm/3.0.3:
@@ -5391,6 +5483,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /type-fest/3.12.0:
+    resolution: {integrity: sha512-qj9wWsnFvVEMUDbESiilKeXeHL7FwwiFcogfhfyjmvT968RXSvnl23f1JOClTHYItsi7o501C/7qVllscUP3oA==}
+    engines: {node: '>=14.16'}
+    dev: true
+
   /typed-array-length/1.0.4:
     resolution: {integrity: sha512-KjZypGq+I/H7HI5HlOoGHkWUUGq+Q0TPhQurLbyrVrvnKTBgzLhIJ7j6J/XTQOi0d1RjyZ0wdas8bKs2p0x3Ng==}
     dependencies:
@@ -5485,6 +5582,13 @@ packages:
     dependencies:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
+    dev: true
+
+  /validate-npm-package-name/5.0.0:
+    resolution: {integrity: sha512-YuKoXDAhBYxY7SfOKxHBDoSyENFeW5VvIIQp2TGQuit8gpK6MnWaQelBKxso72DoxTZfZdcP3W90LqpSkgPzLQ==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+    dependencies:
+      builtins: 5.0.1
     dev: true
 
   /w3c-hr-time/1.0.2:

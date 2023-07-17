@@ -1,6 +1,6 @@
 import { myPackage } from '../src';
 
-describe('myPackage', () => {
+describe('package-b', () => {
   it('should return a string containing the message', () => {
     const message = 'Hello';
 

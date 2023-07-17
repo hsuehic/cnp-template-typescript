@@ -1,14 +1,14 @@
 module.exports = {
   root: true,
+  parser: '@typescript-eslint/parser',
   overrides: [
     {
       files: ['*.ts'],
-      parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
       parserOptions: {
         tsconfigRootDir: __dirname,
         project: ['./tsconfig.json'],
       },
+      plugins: ['@typescript-eslint'],
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',

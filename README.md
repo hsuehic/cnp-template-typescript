@@ -6,7 +6,7 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 
 ## Features
 
-- [Semantic Release](https://github.com/semantic-release/semantic-release)
+- [Changesets](https://github.com/changesets/changesets)
 - [Issue Templates](https://github.com/hsuehic/typescript-npm-package-template/tree/main/.github/ISSUE_TEMPLATE)
 - [GitHub Actions](https://github.com/hsuehic/typescript-npm-package-template/tree/main/.github/workflows)
 - [Codecov](https://about.codecov.io/)
@@ -14,7 +14,6 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 - [TypeScript](https://www.typescriptlang.org/)
 - [Husky](https://github.com/typicode/husky)
 - [Lint Staged](https://github.com/okonet/lint-staged)
-- [Commitizen](https://github.com/search?q=commitizen)
 - [Jest](https://jestjs.io/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
@@ -61,7 +60,6 @@ Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
 [![Issues][issues-img]][issues-url]
 [![Code Coverage][codecov-img]][codecov-url]
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
-[![Semantic Release][semantic-release-img]][semantic-release-url]
 
 > My awesome module
 
@@ -111,7 +109,3 @@ Lorem ipsum.
 [issues-url]:https://github.com/hsuehic/typescript-npm-package-template/issues
 [codecov-img]:https://codecov.io/gh/hsuehic/typescript-npm-package-template/branch/main/graph/badge.svg
 [codecov-url]:https://codecov.io/gh/hsuehic/typescript-npm-package-template
-[semantic-release-img]:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-[semantic-release-url]:https://github.com/semantic-release/semantic-release
-[commitizen-img]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[commitizen-url]:http://commitizen.github.io/cz-cli/

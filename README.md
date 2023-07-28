@@ -27,17 +27,7 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 Alternatively, create a new directory and then run:
 
 ```bash
-curl -fsSL https://github.com/hsuehic/typescript-npm-package-template/archive/main.tar.gz | tar -xz --strip-components=1
-```
-
-Replace `FULL_NAME`, `GITHUB_USER`, and `REPO_NAME` in the script below with your own details to personalize your new package:
-
-```bash
-FULL_NAME="John Smith"
-GITHUB_USER="johnsmith"
-REPO_NAME="my-cool-package"
-sed -i.mybak "s/\([\/\"]\)(hsuehic)/$GITHUB_USER/g; s/typescript-npm-package-template\|my-package-name/$REPO_NAME/g; s/Ryan Sonshine/$FULL_NAME/g" package.json package-lock.json README.md
-rm *.mybak
+npx create-npm-packages --template husehic/cnp-template-typescript --github-username=xxx
 ```
 
 ### Add NPM Token
@@ -59,7 +49,6 @@ Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
 [![Downloads][downloads-img]][downloads-url]
 [![Issues][issues-img]][issues-url]
 [![Code Coverage][codecov-img]][codecov-url]
-[![Commitizen Friendly][commitizen-img]][commitizen-url]
 
 > My awesome module
 

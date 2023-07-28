@@ -95,6 +95,7 @@
     "typescript": "^5.0.1"
   },
   "lint-staged": {
+    ".md": "prettier -w",
     "*.ts": "eslint --cache --cache-location .eslintcache --fix",
     "package.json": "npmPkgJsonLint"
   },

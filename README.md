@@ -1,4 +1,6 @@
-<!--instructions-of-template--># cnp-template-typescript
+<!--instructions-of-template-->
+
+# cnp-template-typescript
 
 > Template to kickstart creating a Node.js module using TypeScript and VSCode, used by [create-npm-packages](https://github.com/hsuehic/create-npm-packages#create-npm-packages)
 
@@ -8,10 +10,10 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 
 - [Commitlint](https://github.com/conventional-changelog/commitlint)
 - [Changesets](https://github.com/changesets/changesets)
-- [Issue Templates](https://github.com/hsuehic/typescript-npm-package-template/tree/main/.github/ISSUE_TEMPLATE)
-- [GitHub Actions](https://github.com/hsuehic/typescript-npm-package-template/tree/main/.github/workflows)
+- [Issue Templates](https://github.com/hsuehic/cnp-template-typescript/tree/main/.github/ISSUE_TEMPLATE)
+- [GitHub Actions](https://github.com/hsuehic/cnp-template-typescript/tree/main/.github/workflows)
 - [Codecov](https://about.codecov.io/)
-- [VSCode Launch Configurations](https://github.com/hsuehic/typescript-npm-package-template/blob/main/.vscode/launch.json)
+- [VSCode Launch Configurations](https://github.com/hsuehic/cnp-template-typescript/blob/main/.vscode/launch.json)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Husky](https://github.com/typicode/husky)
 - [Lint Staged](https://github.com/okonet/lint-staged)
@@ -42,6 +44,7 @@ Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
 **Remove everything from here and above**
 
 ---
+
 <!--instructions-of-template-->
 
 # <!--package-name-->my-package-name<!--package-name-->
@@ -94,6 +97,7 @@ Default: `rainbows`
 Lorem ipsum.
 
 <!--badge-variables-->
+
 [lint-img]: https://github.com/hsuehic/cnp-template-typescript/actions/workflows/lint.yaml/badge.svg
 [lint-url]: https://github.com/hsuehic/cnp-template-typescript/workflows/lint.yaml
 [test-img]: https://github.com/hsuehic/cnp-template-typescript/actions/workflows/test.yaml/badge.svg
@@ -110,4 +114,5 @@ Lorem ipsum.
 [issues-url]: https://github.com/hsuehic/cnp-template-typescript/issues
 [codecov-img]: https://codecov.io/gh/hsuehic/cnp-template-typescript/branch/main/graph/badge.svg
 [codecov-url]: https://codecov.io/gh/hsuehic/cnp-template-typescript
+
 <!--badge-variables-->

@@ -1,6 +1,6 @@
-<!--instructions-of-template--># typescript-npm-package-template
+<!--instructions-of-template--># cnp-template-typescript
 
-> Template to kickstart creating a Node.js module using TypeScript and VSCode
+> Template to kickstart creating a Node.js module using TypeScript and VSCode, used by [create-npm-packages](https://github.com/hsuehic/create-npm-packages#create-npm-packages)
 
 Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-module-boilerplate)
 
